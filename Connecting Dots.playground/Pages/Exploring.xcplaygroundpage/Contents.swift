@@ -55,16 +55,14 @@ class MandalaExploration: MandalaView {
     
     override func interaction() {
         //setting global values
-        Global.fillPallete = UIColor.Pallete.FlatColor.colors
+        Global.fillPallete = UIColor.Pallete.Vibrating.colors
         Global.strokePallete = [UIColor.white, UIColor.lightGray, UIColor.gray, UIColor.black]
         Global.lineWidth = 3.0
         
         addPetalLayer()
-        addPetalLayer()
-        addDropLayer()
+        addBorderLayer()
         addCirclesLayer()
         addReversedPetalLayer()
-        addBorderLayer()
         addBorderLayer(lineWidth: 5)
         addCirclesLayer(circleRadius: 10, slices: 10)
         addBorderLayer(lineWidth: 5)
@@ -73,7 +71,7 @@ class MandalaExploration: MandalaView {
     }
 }
 
-//: With all this possibilities we can create [MUCH MORE!!](@next)
+//: With all this possibilities we can create [MUCH MORE!!](@previous)
 
 import PlaygroundSupport
 PlaygroundPage.current.liveView = MandalaExploration()

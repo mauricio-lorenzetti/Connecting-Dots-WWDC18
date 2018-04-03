@@ -41,15 +41,15 @@ class MandalaInteractive: MandalaView {
     
     override func interaction() {
         
-//        addDropLayer()
-//        addReversedPetalLayer()
-//        addPetalLayer()
-//        addBorderLayer()
-//        addCirclesLayer()
-//        addBorderLayer()
-//        addCirclesLayer()
-//
-        randomize(layers: 4)
+        addDropLayer()
+        addReversedPetalLayer()
+        addPetalLayer()
+        addBorderLayer()
+        addCirclesLayer()
+        addBorderLayer()
+        addCirclesLayer()
+        
+        //randomize(layers: 4)
     }
 }
 
